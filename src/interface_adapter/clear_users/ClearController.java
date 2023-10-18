@@ -4,14 +4,11 @@ import use_case.clear_users.ClearInputBoundary;
 
 // TODO Complete me
 public class ClearController {
-
-    final ClearInputBoundary userclearUseCaseInteractor;
-
-    public ClearController(ClearInputBoundary userclearUseCaseInteractor) {
-        this.userclearUseCaseInteractor = userclearUseCaseInteractor;
+    final ClearInputBoundary ClearUseCaseInteractor;
+    public ClearController(ClearInputBoundary ClearUseCaseInteractor){
+        this.ClearUseCaseInteractor = ClearUseCaseInteractor;
     }
-
     public void execute(){
-    userclearUseCaseInteractor.execute();
+        ClearUseCaseInteractor.execute();
     }
 }
